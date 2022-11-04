@@ -1,5 +1,5 @@
 {
-    "name": "server",
+    "name": "copa-server",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -7,7 +7,10 @@
         "dev": "tsx watch src/server.ts"
     },
     "keywords": [],
-    "author": "",
+    "author": "Lucas Maciel (luk4xm4ci3l@gmail.com)",
+    "prisma": {
+        "seed": "tsx prisma/seed.ts"
+    },
     "license": "ISC",
     "devDependencies": {
         "@mermaid-js/mermaid-cli": "^9.1.7",
@@ -19,6 +22,8 @@
     "dependencies": {
         "@fastify/cors": "^8.1.1",
         "@prisma/client": "^4.5.0",
-        "fastify": "^4.9.2"
+        "fastify": "^4.9.2",
+        "short-unique-id": "^4.4.4",
+        "zod": "^3.19.1"
     }
 }
