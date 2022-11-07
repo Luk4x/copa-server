@@ -34,7 +34,7 @@ const prisma = new PrismaClient();
 
     await prisma.game.create({
         data: {
-            date: '2022-11-06T12:00:00.647Z',
+            date: '2022-11-20T12:00:00.647Z',
             firstTeamCountryCode: 'BR',
             secondTeamCountryCode: 'AR',
             guesses: {

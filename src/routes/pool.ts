@@ -140,12 +140,12 @@ export async function poolRoutes(fastify: FastifyInstance) {
         return { pools };
     });
 
-    fastify.get('/pools/:id', { onRequest: [authenticate] }, async request => {
-        const getPoolsParams = z.object({
+    fastify.get('/pools/:id', { onRequest: [authenticate] }, async (request, reply) => {
+        const getPoolParams = z.object({
             id: z.string()
         });
 
-        const { id } = getPoolsParams.parse(request.params);
+        const { id } = getPoolParams.parse(request.params);
 
         const pool = await prisma.pool.findUnique({
             where: {
@@ -176,6 +176,12 @@ export async function poolRoutes(fastify: FastifyInstance) {
                 }
             }
         });
+
+        if (!pool) {
+            return reply.status(400).send({
+                message: 'Pool not found.'
+            });
+        }
 
         return { pool };
     });
