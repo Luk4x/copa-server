@@ -20,7 +20,7 @@
   <a href="#-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-rotas-e-exemplos">Rotas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-middlewares">Middlewares</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-plugins">Plugins</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-clonando-o-projeto">Clone</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-contato-dos-contribuintes">Contato</a>
 </p>
@@ -38,15 +38,16 @@
 - [Short Unique Id](https://www.npmjs.com/package/short-unique-id)
 - [Typescript](https://www.typescriptlang.org/)
 - [@mermaid-js/mermaid-cli](https://www.npmjs.com/package/@mermaid-js/mermaid-cli)
-- [fastify](https://www.fastify.io/)
+- [Fastify](https://www.fastify.io/)
 - [@fastify/jwt](https://www.npmjs.com/package/@fastify/jwt)
-- [zod](https://www.npmjs.com/package/zod)
+- [Zod](https://www.npmjs.com/package/zod)
 - [NodeJS](https://nodejs.org)
 - [npm](https://www.npmjs.com/)
 
 ## 📝 Sobre
 
-Esse projeto é a API da **Copa**, uma aplicação [Web](https://github.com/Luk4x/copa-web) e [Mobile](https://github.com/Luk4x/copa-mobile) desenvolvida na durante a trilha Ignite da NLW da Rocketseat.
+Esse projeto é a API da **Copa**, que é resumidamente, uma aplicação que realiza o cadastro e a gerência de bolões, jogos e usuários, desenvolvida na durante a trilha Ignite da NLW da [Rocketseat](https://www.rocketseat.com.br/).<br>
+Essa API é a base para a sua interface [Web](https://github.com/Luk4x/copa-web) desenvolvida essencialmente com NextJS, e [Mobile](https://github.com/Luk4x/copa-mobile) desenvolvida essencialmente com React Native.
 
 
 ### 📃 Rotas e Exemplos
@@ -82,26 +83,26 @@ Esse projeto é a API da **Copa**, uma aplicação [Web](https://github.com/Luk4
 -   `GET /users/count`: Retorna o total de usuários cadastrados.
 
 ### 🔑 Plugins
-- `authenticate`: Sua função é fazer a verificação/validação do usuário com JWT.
+- `authenticate`: Sua função é realizar a verificação/validação do usuário com JWT.
 
 ## 📖 Clonando o Projeto
 
-Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior, [Yarn](https://yarnpkg.com/), e de preferência, um API Client como o [Insomnia](https://insomnia.rest/) (mas também pode ser acessado pelo navegador) previamente instalados.<br>No terminal:
+Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/), [Node.js v18.12.0](https://nodejs.org/en/) ou superior e de preferência, um API Client como o [Insomnia](https://insomnia.rest/) (mas também pode ser acessado pelo navegador, porém com suas funcionalidades limitadas) previamente instalados.<br>No terminal:
 
 ```bash
 # Clone esse repositório com:
-> git clone https://github.com/Luk4x/user-register-API.git
+> git clone https://github.com/Luk4x/copa-server.git
 
 # Entre no repositório com:
-> cd user-register-API
+> cd copa-server
 
 # Instale as dependências com: 
-> yarn install
+> npm install
 
 # Execute o projeto com:
-> yarn app
+> npm run dev
 
-# Feito isso, você já poderá acessar o projeto pelo link que aparecerá no terminal! (algo como http://localhost:3001/ ou http://127.0.0.1:5173/)
+# Feito isso, você já poderá acessar o projeto pelo link que aparecerá no terminal! (algo como http://localhost:3333/ ou http://0.0.0.0:3333/)
 ```
 
 ## 🤝 Contato dos Contribuintes
@@ -120,5 +121,5 @@ Para clonar e executar este projeto em seu computador, você precisará do [Git]
 </table>
 
 <p align="right">
-  <a href="#-users-project-api">Voltar ao Topo</a>
+  <a href="#-copa-project-api">Voltar ao Topo</a>
 </p>
