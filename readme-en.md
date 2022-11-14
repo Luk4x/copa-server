@@ -46,7 +46,7 @@
 
 ## 📝 About
 
-This project is the **Copa** API, which is, in short, an application that performs the registration and management of pools, games and users, developed during the Ignite trail of the NLW of [Rocketseat](https://www.rocketseat.com.br/).<br>
+This project is the **Copa** API, which is, in short, a world cup themed application that performs the registration and management of pools, games and users, developed during the Ignite trail of the NLW Copa of [Rocketseat](https://www.rocketseat.com.br/).<br>
 This API is the basis for its [Web](https://github.com/Luk4x/copa-web) interface developed essentially with NextJS, and [Mobile](https://github.com/Luk4x/copa-mobile) primarily developed with React Native.
 
 ### 📃 Routes and Examples
