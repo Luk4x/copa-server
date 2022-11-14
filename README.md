@@ -46,7 +46,7 @@
 
 ## 📝 Sobre
 
-Esse projeto é a API da **Copa**, que é resumidamente, uma aplicação que realiza o cadastro e a gerência de bolões, jogos e usuários, desenvolvida na durante a trilha Ignite da NLW da [Rocketseat](https://www.rocketseat.com.br/).<br>
+Esse projeto é a API da **Copa**, que é resumidamente, uma aplicação temática da copa do mundo que realiza o cadastro e a gerência de bolões, jogos e usuários, desenvolvida na durante a trilha Ignite da NLW Copa da [Rocketseat](https://www.rocketseat.com.br/).<br>
 Essa API é a base para a sua interface [Web](https://github.com/Luk4x/copa-web) desenvolvida essencialmente com NextJS, e [Mobile](https://github.com/Luk4x/copa-mobile) desenvolvida essencialmente com React Native.
 
 
