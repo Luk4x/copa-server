@@ -67,16 +67,22 @@ Esse projeto é a API da **Copa**, uma aplicação [Web](https://github.com/Luk4
 
 -   `GET /guesses/count`: Essa rota retorna o total de palpites feitos.
 
--   `POST /pools/:poolId/games/:gameId/guesses`: Com base nos `id` nos valores de `firstTeamPoints` e `secondTeamPoints` enviados, essa rota cria um palpite para o determinado jogo no determinado bolão com os valores recebidos.
+-   `POST /pools/:poolId/games/:gameId/guesses`: Com base nos parâmetros de `id` nos valores de `firstTeamPoints` e `secondTeamPoints` enviados pelo body, essa rota cria um palpite para o determinado jogo no determinado bolão com os valores recebidos.
   
--   `DELETE /users/:id`:  Com base no `id` enviado, deleta o usuário que o possui.
+-   `GET /pools/count`: Essa rota retorna o total de bolões criados.
+
+-   `POST /pools`: Com base no `title` enviado pelo `body`, essa rota cria um bolão com o determinado título, e gera seu `code` automáticamente com o auxílio do `short-unique-id`.
+
+-   `POST /pools/join`: Com base no `code` enviado pelo `body`, essa rota permite um determinado usuário se tornar participante do determinado bolão.
+
+-   `GET /pools`: Essa rota retorna os primeiros 4 bolões que ela encontrar.
+
+-   `GET /pools/:id`: Com base no `id` enviado, essa rota retorna informações sobre um determinado bolão.
+
+-   `GET /users/count`: Retorna o total de usuários cadastrados.
 
 ### 🔑 Plugins
-- `checkUserId`: Sua função é verificar se o ID recebido existe e tomar medidas em caso de inexistência. Ele é usado em todas as rotas que recebem um ID.
-
-- `showMethodNUrl`: Sua função é mostrar no console o método(GET,POST,PUT,DELETE, etc) e também a url da requisição. Ele é usado em todas as requisições e tem o objetivo apenas de facilitar e organizar o desenvolvimento.
-
-- `verifyUserData`: Sua função é verificar os dados do usuário enviados pelo `body`, e tomar medidas caso essa requisição tenha a intenção de modificar dados que o usuário não tem permissão.
+- `authenticate`: Sua função é fazer a verificação/validação do usuário com JWT.
 
 ## 📖 Clonando o Projeto
 
